@@ -20,7 +20,7 @@ public class MemoryMemberRepository implements MemberRepository {
         member.setId(++sequence);
         // store에 put하기 전에 member ID를 세팅해주고 이름은 넘어온 상태
         store.put(member.getId(), member);
-        // store에 put하여 아이디가 저장ㄷ됨
+        // store에 put하여 아이디가 저장됨
         return member;
     }
 
