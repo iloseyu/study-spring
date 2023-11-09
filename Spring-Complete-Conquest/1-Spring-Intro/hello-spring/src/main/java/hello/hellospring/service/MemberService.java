@@ -5,11 +5,13 @@ import hello.hellospring.repository.MemberRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
 
 
+@Transactional
 public class MemberService {
     // private final MemberRepository memberRepository = new MemoryMemberRepository();
 
@@ -44,12 +46,20 @@ public class MemberService {
                     throw new IllegalStateException("이미 존재하는 회원입니다.");
                 });
          */
-        
-        // 중복 회원 검증 메서드 호출
-        validateDuplicateMember(member);
-        // 검증 후 저장
-        memberRepository.save(member);
-        return member.getId();
+        // 메서드가 얼마동안 돌아가는지 초 세기
+/*        long start = System.currentTimeMillis();
+
+        try {*/
+            // 중복 회원 검증 메서드 호출
+            validateDuplicateMember(member);
+            // 검증 후 저장
+            memberRepository.save(member);
+            return member.getId();
+/*        } finally {
+            long finish = System.currentTimeMillis();
+            long timeMs = finish - start;
+            System.out.println("join = " + timeMs + "ms");
+        }*/
     }
 
     /*
@@ -68,12 +78,20 @@ public class MemberService {
     * 전체 회원 조회
     * */
     public List<Member> findMembers() {
-        return memberRepository.findAll();
+/*        long start = System.currentTimeMillis();
+        try {*/
+            return memberRepository.findAll();
+/*        } finally {
+            long finish = System.currentTimeMillis();
+            long timeMs = finish - start;
+            System.out.println("findAll" + timeMs + "ms");
+        }*/
     }
     
     
     
     /*
+
     * 아이디로 회원 조회
     * */
     public Optional<Member> findOne(Long memberId) {
