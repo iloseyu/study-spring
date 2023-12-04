@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thymeleaf</title>
+</head>
+<body>
+<h1>주석</h1>
+<div><h3>설명</h3>
+    <p>표준 html 주석은 렌더링하지 않음</p>
+</div><br/><br/>
+
+<h3>예시</h3>
+<span th:text="${data}">html data</span>
+
+<h1>1. 표준 HTML 주석</h1> <!--<span th:text="${data}">html data</span> -->
+
+<h1>2. 타임리프 파서 주석</h1> <!--/* [[${data}]] */-->
+
+<!--/*-->
+<span th:text="${data}">html data</span>
+<!--*/-->
+
+<h1>3. 타임리프 프로토타입 주석</h1>
+<!--/*/
+ <span th:text="${data}">html data</span>
+ /*/-->
+</body>
+</html>

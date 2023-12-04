@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Thymeleaf</title>
+</head>
+<body>
+<h1>리터럴</h1>
+<div>
+<h3>설명</h3>
+리터럴 : 소스 코드 상에서 고정된 값<br>
+타임리프에서 문자 리터럴을 항상 '이렇게' 작은 따옴표로 감싸야 함<br>
+문자를 입력할 때 항상 감싸기 귀찮기 때문에, 공백 없이 쭉 이어지면 하나의 의미 있는 토큰으로 인지하여 생략 가능
+</div>
+<ul>
+    <!--주의! 다음 주석을 풀면 예외가 발생함-->
+    <!-- <li>"hello world!" = <span th:text="hello world!"></span></li>-->
+    <li>'hello' + ' world!' = <span th:text="'hello' + ' world!'"></span></li>
+    <li>'hello world!' = <span th:text="'hello world!'"></span></li>
+    <li>'hello ' + ${data} = <span th:text="'hello ' + ${data}"></span></li>
+    <li>리터럴 대체 |hello ${data}| = <span th:text="|hello ${data}|"></span></li>
+    <li>th:text="hello world!" 안에 공백이 있기 때문에 '' 없이는 오류 남</li>
+</ul>
+</body>
+</html>

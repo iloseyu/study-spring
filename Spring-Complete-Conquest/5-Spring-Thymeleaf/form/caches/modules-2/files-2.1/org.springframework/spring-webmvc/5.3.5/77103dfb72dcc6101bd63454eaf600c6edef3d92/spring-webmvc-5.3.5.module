@@ -1,0 +1,609 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "org.springframework",
+    "module": "spring-webmvc",
+    "version": "5.3.5",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.8.3",
+      "buildId": "iai6y6ik2jad5n3tmwuktc4oi4"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.localToProject": "public",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.springframework",
+          "module": "spring-aop",
+          "version": {
+            "requires": "5.3.5"
+          },
+          "excludes": [
+            {
+              "group": "xml-apis",
+              "module": "xml-apis"
+            },
+            {
+              "group": "org.apache.taglibs",
+              "module": "taglibs-standard-spec"
+            },
+            {
+              "group": "net.java.dev.msv",
+              "module": "xsdlib"
+            },
+            {
+              "group": "xpp3",
+              "module": "xpp3"
+            },
+            {
+              "group": "dom4j",
+              "module": "dom4j"
+            },
+            {
+              "group": "relaxngDatatype",
+              "module": "relaxngDatatype"
+            },
+            {
+              "group": "pull-parser",
+              "module": "pull-parser"
+            },
+            {
+              "group": "org.hamcrest",
+              "module": "hamcrest-core"
+            },
+            {
+              "group": "commons-logging",
+              "module": "commons-logging"
+            }
+          ]
+        },
+        {
+          "group": "org.springframework",
+          "module": "spring-beans",
+          "version": {
+            "requires": "5.3.5"
+          },
+          "excludes": [
+            {
+              "group": "xml-apis",
+              "module": "xml-apis"
+            },
+            {
+              "group": "org.apache.taglibs",
+              "module": "taglibs-standard-spec"
+            },
+            {
+              "group": "net.java.dev.msv",
+              "module": "xsdlib"
+            },
+            {
+              "group": "xpp3",
+              "module": "xpp3"
+            },
+            {
+              "group": "dom4j",
+              "module": "dom4j"
+            },
+            {
+              "group": "relaxngDatatype",
+              "module": "relaxngDatatype"
+            },
+            {
+              "group": "pull-parser",
+              "module": "pull-parser"
+            },
+            {
+              "group": "org.hamcrest",
+              "module": "hamcrest-core"
+            },
+            {
+              "group": "commons-logging",
+              "module": "commons-logging"
+            }
+          ]
+        },
+        {
+          "group": "org.springframework",
+          "module": "spring-context",
+          "version": {
+            "requires": "5.3.5"
+          },
+          "excludes": [
+            {
+              "group": "xml-apis",
+              "module": "xml-apis"
+            },
+            {
+              "group": "org.apache.taglibs",
+              "module": "taglibs-standard-spec"
+            },
+            {
+              "group": "net.java.dev.msv",
+              "module": "xsdlib"
+            },
+            {
+              "group": "xpp3",
+              "module": "xpp3"
+            },
+            {
+              "group": "dom4j",
+              "module": "dom4j"
+            },
+            {
+              "group": "relaxngDatatype",
+              "module": "relaxngDatatype"
+            },
+            {
+              "group": "pull-parser",
+              "module": "pull-parser"
+            },
+            {
+              "group": "org.hamcrest",
+              "module": "hamcrest-core"
+            },
+            {
+              "group": "commons-logging",
+              "module": "commons-logging"
+            }
+          ]
+        },
+        {
+          "group": "org.springframework",
+          "module": "spring-core",
+          "version": {
+            "requires": "5.3.5"
+          },
+          "excludes": [
+            {
+              "group": "xml-apis",
+              "module": "xml-apis"
+            },
+            {
+              "group": "org.apache.taglibs",
+              "module": "taglibs-standard-spec"
+            },
+            {
+              "group": "net.java.dev.msv",
+              "module": "xsdlib"
+            },
+            {
+              "group": "xpp3",
+              "module": "xpp3"
+            },
+            {
+              "group": "dom4j",
+              "module": "dom4j"
+            },
+            {
+              "group": "relaxngDatatype",
+              "module": "relaxngDatatype"
+            },
+            {
+              "group": "pull-parser",
+              "module": "pull-parser"
+            },
+            {
+              "group": "org.hamcrest",
+              "module": "hamcrest-core"
+            },
+            {
+              "group": "commons-logging",
+              "module": "commons-logging"
+            }
+          ]
+        },
+        {
+          "group": "org.springframework",
+          "module": "spring-expression",
+          "version": {
+            "requires": "5.3.5"
+          },
+          "excludes": [
+            {
+              "group": "xml-apis",
+              "module": "xml-apis"
+            },
+            {
+              "group": "org.apache.taglibs",
+              "module": "taglibs-standard-spec"
+            },
+            {
+              "group": "net.java.dev.msv",
+              "module": "xsdlib"
+            },
+            {
+              "group": "xpp3",
+              "module": "xpp3"
+            },
+            {
+              "group": "dom4j",
+              "module": "dom4j"
+            },
+            {
+              "group": "relaxngDatatype",
+              "module": "relaxngDatatype"
+            },
+            {
+              "group": "pull-parser",
+              "module": "pull-parser"
+            },
+            {
+              "group": "org.hamcrest",
+              "module": "hamcrest-core"
+            },
+            {
+              "group": "commons-logging",
+              "module": "commons-logging"
+            }
+          ]
+        },
+        {
+          "group": "org.springframework",
+          "module": "spring-web",
+          "version": {
+            "requires": "5.3.5"
+          },
+          "excludes": [
+            {
+              "group": "xml-apis",
+              "module": "xml-apis"
+            },
+            {
+              "group": "org.apache.taglibs",
+              "module": "taglibs-standard-spec"
+            },
+            {
+              "group": "net.java.dev.msv",
+              "module": "xsdlib"
+            },
+            {
+              "group": "xpp3",
+              "module": "xpp3"
+            },
+            {
+              "group": "dom4j",
+              "module": "dom4j"
+            },
+            {
+              "group": "relaxngDatatype",
+              "module": "relaxngDatatype"
+            },
+            {
+              "group": "pull-parser",
+              "module": "pull-parser"
+            },
+            {
+              "group": "org.hamcrest",
+              "module": "hamcrest-core"
+            },
+            {
+              "group": "commons-logging",
+              "module": "commons-logging"
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "name": "spring-webmvc-5.3.5.jar",
+          "url": "spring-webmvc-5.3.5.jar",
+          "size": 1000908,
+          "sha512": "c8a53f6c83efeb6266d61255e2c617c485775be94f303225a62c60ac92a984d5b40691bbd833c03b2469d370c099489d07a6a30e4e723015035fbb3672e5e39e",
+          "sha256": "d663076cf51140e4a5a489cf6eced2af2457531a75d9cbf6ffb658b7be9d4099",
+          "sha1": "449649af0eda09def9b5748bc8438253bf02f9f3",
+          "md5": "ef765f15e1a1756f19acfb391e01b10b"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.localToProject": "public",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.springframework",
+          "module": "spring-aop",
+          "version": {
+            "requires": "5.3.5"
+          },
+          "excludes": [
+            {
+              "group": "xml-apis",
+              "module": "xml-apis"
+            },
+            {
+              "group": "org.apache.taglibs",
+              "module": "taglibs-standard-spec"
+            },
+            {
+              "group": "net.java.dev.msv",
+              "module": "xsdlib"
+            },
+            {
+              "group": "xpp3",
+              "module": "xpp3"
+            },
+            {
+              "group": "dom4j",
+              "module": "dom4j"
+            },
+            {
+              "group": "relaxngDatatype",
+              "module": "relaxngDatatype"
+            },
+            {
+              "group": "pull-parser",
+              "module": "pull-parser"
+            },
+            {
+              "group": "org.hamcrest",
+              "module": "hamcrest-core"
+            },
+            {
+              "group": "commons-logging",
+              "module": "commons-logging"
+            }
+          ]
+        },
+        {
+          "group": "org.springframework",
+          "module": "spring-beans",
+          "version": {
+            "requires": "5.3.5"
+          },
+          "excludes": [
+            {
+              "group": "xml-apis",
+              "module": "xml-apis"
+            },
+            {
+              "group": "org.apache.taglibs",
+              "module": "taglibs-standard-spec"
+            },
+            {
+              "group": "net.java.dev.msv",
+              "module": "xsdlib"
+            },
+            {
+              "group": "xpp3",
+              "module": "xpp3"
+            },
+            {
+              "group": "dom4j",
+              "module": "dom4j"
+            },
+            {
+              "group": "relaxngDatatype",
+              "module": "relaxngDatatype"
+            },
+            {
+              "group": "pull-parser",
+              "module": "pull-parser"
+            },
+            {
+              "group": "org.hamcrest",
+              "module": "hamcrest-core"
+            },
+            {
+              "group": "commons-logging",
+              "module": "commons-logging"
+            }
+          ]
+        },
+        {
+          "group": "org.springframework",
+          "module": "spring-context",
+          "version": {
+            "requires": "5.3.5"
+          },
+          "excludes": [
+            {
+              "group": "xml-apis",
+              "module": "xml-apis"
+            },
+            {
+              "group": "org.apache.taglibs",
+              "module": "taglibs-standard-spec"
+            },
+            {
+              "group": "net.java.dev.msv",
+              "module": "xsdlib"
+            },
+            {
+              "group": "xpp3",
+              "module": "xpp3"
+            },
+            {
+              "group": "dom4j",
+              "module": "dom4j"
+            },
+            {
+              "group": "relaxngDatatype",
+              "module": "relaxngDatatype"
+            },
+            {
+              "group": "pull-parser",
+              "module": "pull-parser"
+            },
+            {
+              "group": "org.hamcrest",
+              "module": "hamcrest-core"
+            },
+            {
+              "group": "commons-logging",
+              "module": "commons-logging"
+            }
+          ]
+        },
+        {
+          "group": "org.springframework",
+          "module": "spring-core",
+          "version": {
+            "requires": "5.3.5"
+          },
+          "excludes": [
+            {
+              "group": "xml-apis",
+              "module": "xml-apis"
+            },
+            {
+              "group": "org.apache.taglibs",
+              "module": "taglibs-standard-spec"
+            },
+            {
+              "group": "net.java.dev.msv",
+              "module": "xsdlib"
+            },
+            {
+              "group": "xpp3",
+              "module": "xpp3"
+            },
+            {
+              "group": "dom4j",
+              "module": "dom4j"
+            },
+            {
+              "group": "relaxngDatatype",
+              "module": "relaxngDatatype"
+            },
+            {
+              "group": "pull-parser",
+              "module": "pull-parser"
+            },
+            {
+              "group": "org.hamcrest",
+              "module": "hamcrest-core"
+            },
+            {
+              "group": "commons-logging",
+              "module": "commons-logging"
+            }
+          ]
+        },
+        {
+          "group": "org.springframework",
+          "module": "spring-expression",
+          "version": {
+            "requires": "5.3.5"
+          },
+          "excludes": [
+            {
+              "group": "xml-apis",
+              "module": "xml-apis"
+            },
+            {
+              "group": "org.apache.taglibs",
+              "module": "taglibs-standard-spec"
+            },
+            {
+              "group": "net.java.dev.msv",
+              "module": "xsdlib"
+            },
+            {
+              "group": "xpp3",
+              "module": "xpp3"
+            },
+            {
+              "group": "dom4j",
+              "module": "dom4j"
+            },
+            {
+              "group": "relaxngDatatype",
+              "module": "relaxngDatatype"
+            },
+            {
+              "group": "pull-parser",
+              "module": "pull-parser"
+            },
+            {
+              "group": "org.hamcrest",
+              "module": "hamcrest-core"
+            },
+            {
+              "group": "commons-logging",
+              "module": "commons-logging"
+            }
+          ]
+        },
+        {
+          "group": "org.springframework",
+          "module": "spring-web",
+          "version": {
+            "requires": "5.3.5"
+          },
+          "excludes": [
+            {
+              "group": "xml-apis",
+              "module": "xml-apis"
+            },
+            {
+              "group": "org.apache.taglibs",
+              "module": "taglibs-standard-spec"
+            },
+            {
+              "group": "net.java.dev.msv",
+              "module": "xsdlib"
+            },
+            {
+              "group": "xpp3",
+              "module": "xpp3"
+            },
+            {
+              "group": "dom4j",
+              "module": "dom4j"
+            },
+            {
+              "group": "relaxngDatatype",
+              "module": "relaxngDatatype"
+            },
+            {
+              "group": "pull-parser",
+              "module": "pull-parser"
+            },
+            {
+              "group": "org.hamcrest",
+              "module": "hamcrest-core"
+            },
+            {
+              "group": "commons-logging",
+              "module": "commons-logging"
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "name": "spring-webmvc-5.3.5.jar",
+          "url": "spring-webmvc-5.3.5.jar",
+          "size": 1000908,
+          "sha512": "c8a53f6c83efeb6266d61255e2c617c485775be94f303225a62c60ac92a984d5b40691bbd833c03b2469d370c099489d07a6a30e4e723015035fbb3672e5e39e",
+          "sha256": "d663076cf51140e4a5a489cf6eced2af2457531a75d9cbf6ffb658b7be9d4099",
+          "sha1": "449649af0eda09def9b5748bc8438253bf02f9f3",
+          "md5": "ef765f15e1a1756f19acfb391e01b10b"
+        }
+      ]
+    }
+  ]
+}

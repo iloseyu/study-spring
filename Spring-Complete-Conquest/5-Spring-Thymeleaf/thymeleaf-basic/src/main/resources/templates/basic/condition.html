@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thymeleaf</title>
+</head>
+<body>
+<h1>If, Switch-Case</h1>
+<div><h3>설명</h3>
+    <p>만약 if문에 맞지 않으면 실행될 때 해당 태그 자체가 날아감.</p>
+</div><br/><br/>
+
+<h3>if, unless</h3>
+<table border="1">
+    <tr>
+        <th>count</th>
+        <th>username</th>
+        <th>age</th>
+    </tr>
+    <tr th:each="user, userStat : ${users}">
+        <td th:text="${userStat.count}">1</td>
+        <td th:text="${user.username}">username</td>
+        <td><span th:text="${user.age}">0</span> <span th:text="'미성년자'" th:if="${user.age lt 20}"></span> <span
+                th:text="'미성년자'" th:unless="${user.age ge 20}"></span></td>
+    </tr>
+
+</table>
+<h3>switch</h3>
+<table border="1">
+    <tr>
+        <th>count</th>
+        <th>username</th>
+        <th>age</th>
+    </tr>
+    <tr th:each="user, userStat : ${users}">
+        <td th:text="${userStat.count}">1</td>
+        <td th:text="${user.username}">username</td>
+        <td th:switch="${user.age}">
+            <span th:case="10">10살</span>
+            <span th:case="20">20살</span>
+            <span th:case="*">기타</span></td>
+    </tr>
+</table>
+
+</body>
+</html>

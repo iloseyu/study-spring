@@ -1,0 +1,95 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "org.springframework",
+    "module": "spring-core",
+    "version": "5.3.5",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.8.3",
+      "buildId": "iai6y6ik2jad5n3tmwuktc4oi4"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.localToProject": "public",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.springframework",
+          "module": "spring-jcl",
+          "version": {
+            "requires": "5.3.5"
+          },
+          "excludes": [
+            {
+              "group": "org.hamcrest",
+              "module": "hamcrest-core"
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "name": "spring-core-5.3.5.jar",
+          "url": "spring-core-5.3.5.jar",
+          "size": 1468904,
+          "sha512": "f2af70b5443b72189f5cffd89780d2f925625de4631c0bfa6dbb130a0469afd59d9d0a65154655f2f0e08beb6b67b58ce835bbb05e494e49fd8ba84bfe066974",
+          "sha256": "4f25c412aed640d50200ef3b8013482d29878bd03eaa722af20b4fc7e2126d19",
+          "sha1": "633de7c79bfeccf05c81a0d4a32b3336010f06ab",
+          "md5": "57495031afc9c51b71a6a3c5640c2e82"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.localToProject": "public",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.springframework",
+          "module": "spring-jcl",
+          "version": {
+            "requires": "5.3.5"
+          },
+          "excludes": [
+            {
+              "group": "org.hamcrest",
+              "module": "hamcrest-core"
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "name": "spring-core-5.3.5.jar",
+          "url": "spring-core-5.3.5.jar",
+          "size": 1468904,
+          "sha512": "f2af70b5443b72189f5cffd89780d2f925625de4631c0bfa6dbb130a0469afd59d9d0a65154655f2f0e08beb6b67b58ce835bbb05e494e49fd8ba84bfe066974",
+          "sha256": "4f25c412aed640d50200ef3b8013482d29878bd03eaa722af20b4fc7e2126d19",
+          "sha1": "633de7c79bfeccf05c81a0d4a32b3336010f06ab",
+          "md5": "57495031afc9c51b71a6a3c5640c2e82"
+        }
+      ]
+    }
+  ]
+}

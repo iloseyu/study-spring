@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thymeleaf</title>
+</head>
+<body>
+<h1>Block</h1>
+<div><h3>설명</h3>
+    <p>타임리프에서 제공하는 유일한 자체 태그</p>
+    <p>html의 두 태그를 한 번에 반복하고 싶을 때 사용. each만으로 해결하기 어려울 때</p>
+</div><br/><br/>
+
+<th:block th:each="user : ${users}">
+    <div>
+        사용자 이름1 <span th:text="${user.username}"></span>
+        사용자 나이1 <span th:text="${user.age}"></span>
+    </div>
+    <div>
+        요약 <span th:text="${user.username} + ' / ' + ${user.age}"></span>
+    </div>
+</th:block>
+
+</body>
+</html>

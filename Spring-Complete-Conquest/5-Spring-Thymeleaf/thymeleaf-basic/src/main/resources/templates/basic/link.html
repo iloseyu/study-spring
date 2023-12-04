@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thymeleaf</title>
+</head>
+<body>
+<h1>URL 링크</h1>
+<ul>
+    <li>제일 단순하게 url 표현 <a th:href="@{/hello}">basic url</a></li>
+    <li>url에 값을 지정해서 넘기기<a th:href="@{/hello(param1=${param1}, param2=${param2})}">hello query param</a></li>
+    <li>url 경로에 /param1/param2 넣어서 경로 넘기기<a th:href="@{/hello/{param1}/{param2}(param1=${param1}, param2=${param2})}">path variable</a></li>
+    <li><a th:href="@{/hello/{param1}(param1=${param1}, param2=${param2})}">path variable + query parameter</a></li>
+</ul>
+</body>
+</html>

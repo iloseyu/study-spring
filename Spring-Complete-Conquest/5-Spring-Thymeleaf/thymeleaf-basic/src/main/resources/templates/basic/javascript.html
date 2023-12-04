@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thymeleaf</title>
+</head>
+<body>
+<h1>Javascript</h1>
+<div><h3>설명</h3>
+    <p>그냥 script면 문자와 숫자 등등 챙겨야 할 게 너무 많음</p>
+    <p>inline으로 javascript를 넣어주면, 문자, 숫자를 챙겨줄 뿐만 아니라 객체는 json 타입으로 반환해줌</p>
+    <p>예를 들어 쌍따옴표같은 것들도 맞게 처리해줌</p>
+</div><br/><br/>
+
+<!-- 자바스크립트 인라인 사용 전 -->
+<script>
+    //var username = [[${user.username}]];  // 오류남
+    var username = "[[${user.username}]]";
+    var age = [[${user.age}]];
+
+    //자바스크립트 내추럴 템플릿
+    var username2 = /*[[${user.username}]]*/ "test username";
+
+    //객체
+    var user = [[${user}]];
+</script>
+
+<!-- 자바스크립트 인라인 사용 후 -->
+<script th:inline="javascript">
+    var username = [[${user.username}]];
+    var age = [[${user.age}]];
+    var username2 = [[${user2.username}]];
+    var age2 = [[${user2.age}]];
+
+    //자바스크립트 내추럴 템플릿
+    var username3 = /*[[${user.username}]]*/ "test username";
+
+    //객체
+    var user = [[${user}]];
+    var user2 = [[${user2}]];
+</script>
+
+<script th:inline="javascript">
+    [# th:each="user, stat : ${users}"]
+    var user[[${stat.count}]] = [[${user}]];
+    [/]
+</script>
+
+</body>
+</html>

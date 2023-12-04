@@ -1,0 +1,141 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "org.junit.platform",
+    "module": "junit-platform-commons",
+    "version": "1.7.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.6.1",
+      "buildId": "xrgizuntbnaa5ldju7zisp5uqi"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.junit",
+          "module": "junit-bom",
+          "version": {
+            "requires": "5.7.1"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          },
+          "endorseStrictVersions": true
+        },
+        {
+          "group": "org.apiguardian",
+          "module": "apiguardian-api",
+          "version": {
+            "requires": "1.1.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "junit-platform-commons-1.7.1.jar",
+          "url": "junit-platform-commons-1.7.1.jar",
+          "size": 99606,
+          "sha512": "4354024348831c0dabc2a3da58186de4f982a645b961f81055d24df618a0f792fc306472900ac5763872dfc88cb65eed4ec404e28c3d807be8958c769c546be9",
+          "sha256": "7c546be86864718fbaceb79fa84ff1d3a516500fc428f1b21d061c2e0fbc5a4b",
+          "sha1": "7c49f0074842d07f4335de2389d624a7437d1407",
+          "md5": "d6d74d7c8854ecd573bdc8cde68b80f1"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.junit",
+          "module": "junit-bom",
+          "version": {
+            "requires": "5.7.1"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          },
+          "endorseStrictVersions": true
+        },
+        {
+          "group": "org.apiguardian",
+          "module": "apiguardian-api",
+          "version": {
+            "requires": "1.1.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "junit-platform-commons-1.7.1.jar",
+          "url": "junit-platform-commons-1.7.1.jar",
+          "size": 99606,
+          "sha512": "4354024348831c0dabc2a3da58186de4f982a645b961f81055d24df618a0f792fc306472900ac5763872dfc88cb65eed4ec404e28c3d807be8958c769c546be9",
+          "sha256": "7c546be86864718fbaceb79fa84ff1d3a516500fc428f1b21d061c2e0fbc5a4b",
+          "sha1": "7c49f0074842d07f4335de2389d624a7437d1407",
+          "md5": "d6d74d7c8854ecd573bdc8cde68b80f1"
+        }
+      ]
+    },
+    {
+      "name": "javadocElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "junit-platform-commons-1.7.1-javadoc.jar",
+          "url": "junit-platform-commons-1.7.1-javadoc.jar",
+          "size": 630266,
+          "sha512": "b5b13f6c5de2da98fa8a64d705616b7e9e85624e6a369b94609dcbb507d1e355ffaf32744b067188b704f21e5d3195901666e1e7e4a8be724cb6c39ae30fdfc9",
+          "sha256": "ed88915354b6fe79edb3e39422ad8799d73581534b79e671a861c1628236b515",
+          "sha1": "a060a07ded4cfecbc4cae56df9d1045ad7c35ad4",
+          "md5": "d61b3546ab791cd5cbc37108bbd60bb6"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "junit-platform-commons-1.7.1-sources.jar",
+          "url": "junit-platform-commons-1.7.1-sources.jar",
+          "size": 73789,
+          "sha512": "7404bb8963b60e9eb89fd22f33d99cc06dbecc94c60c1e47bdd2336b3946ebecbdfca79bbc0491c83394b7a054c9ee5b1e52533505d607ce77edc2735eb66fe5",
+          "sha256": "cd43f43cd15913d24f32fa4543bb9689e99de75acc79e564500bcf97716e2ffc",
+          "sha1": "4f2ca409307a4791a2d855b99ddbbf2c904b5fd5",
+          "md5": "01ce4aa67e094640a31059c107f4317d"
+        }
+      ]
+    }
+  ]
+}
