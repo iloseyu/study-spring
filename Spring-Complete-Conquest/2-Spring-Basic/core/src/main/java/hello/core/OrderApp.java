@@ -12,8 +12,12 @@ public class OrderApp {
     // 바로 테스트 해도 되지만, 테스트에 익숙치 않으면 이렇게 테스트해볼 것
 
     public static void main(String[] args) {
-        MemberService memberService = new MemberServiceImpl();
-        OrderService orderService = new OrderServiceImpl();
+//        MemberService memberService = new MemberServiceImpl();
+//        OrderService orderService = new OrderServiceImpl();
+
+        AppConfig appConfig = new AppConfig();
+        MemberService memberService = appConfig.memberService();
+        OrderService orderService = appConfig.orderService();
         
         Long memberId = 1L;
         Member member = new Member(memberId, "memberA", Grade.VIP);

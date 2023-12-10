@@ -8,9 +8,18 @@ import hello.core.member.MemoryMemberRepository;
 
 public class OrderServiceImpl implements OrderService {
 
-    private final MemberRepository memberRepository = new MemoryMemberRepository();
-    private final DiscountPolicy discountPolicy = new FixDiscountPolicy();
+//    private final MemberRepository memberRepository = new MemoryMemberRepository();
+//    private final DiscountPolicy discountPolicy = new FixDiscountPolicy();
 
+    private final MemberRepository memberRepository;
+    private final DiscountPolicy discountPolicy;
+    // 철저히 DIP를 지키는 중. = 철저히 Interface를 의존하는 중
+
+    public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy) {
+        this.memberRepository = memberRepository;
+        this.discountPolicy = discountPolicy;
+    }
+    
     @Override
     public Order createOrder(Long memberId, String itemName, int itemPrice) {
         // 주문 생성 요청이 오면 회원 정보를 먼저 조회 하고
