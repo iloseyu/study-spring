@@ -5,7 +5,10 @@ import hello.core.discount.FixDiscountPolicy;
 import hello.core.member.Member;
 import hello.core.member.MemberRepository;
 import hello.core.member.MemoryMemberRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+@Component
 public class OrderServiceImpl implements OrderService {
 
 //    private final MemberRepository memberRepository = new MemoryMemberRepository();
@@ -15,6 +18,7 @@ public class OrderServiceImpl implements OrderService {
     private final DiscountPolicy discountPolicy;
     // 철저히 DIP를 지키는 중. = 철저히 Interface를 의존하는 중
 
+    @Autowired
     public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy) {
         this.memberRepository = memberRepository;
         this.discountPolicy = discountPolicy;
@@ -32,4 +36,10 @@ public class OrderServiceImpl implements OrderService {
         // 최종 생성된 주문을 반환함
         return new Order(memberId, itemName, itemPrice, discountPrice);
     }
+
+    // 테스트 용eh
+    public MemberRepository getMemberRepository() {
+        return memberRepository;
+    }
+
 }
