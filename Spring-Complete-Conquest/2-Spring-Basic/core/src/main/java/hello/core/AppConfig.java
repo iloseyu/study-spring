@@ -52,6 +52,7 @@ public class AppConfig {
     public OrderService orderService() {
         System.out.println("CALL AppConfig.orderService");
         return new OrderServiceImpl(memberRepository(), discountPolicy());
+//        return null;
         // 일단 DiscountPolicy는 Fix로 설정
     }
 

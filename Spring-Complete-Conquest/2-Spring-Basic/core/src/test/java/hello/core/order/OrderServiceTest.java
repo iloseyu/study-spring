@@ -1,13 +1,12 @@
 package hello.core.order;
 
 import hello.core.AppConfig;
-import hello.core.member.Grade;
-import hello.core.member.Member;
-import hello.core.member.MemberService;
-import hello.core.member.MemberServiceImpl;
+import hello.core.discount.FixDiscountPolicy;
+import hello.core.member.*;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.mockito.internal.matchers.Or;
 
 public class OrderServiceTest {
 //    MemberService memberService = new MemberServiceImpl();
@@ -40,4 +39,17 @@ public class OrderServiceTest {
     }
     // 이런 단위 테스트를 하는 것이 중요!
     // 단위 테스트란? 순수 자바 코드로 만들어 놓은 테스트 코드
+
+/*    @Test
+    void fieldInjectionTest() {
+        OrderServiceImpl orderService = new OrderServiceImpl();
+//        orderService.createOrder(1L, "itemA", 10000);
+        // 당연히 NullPointException..
+        // 그렇다면 set~ 을 만들어줘야 함.
+
+        orderService.setMemberRepository(new MemoryMemberRepository());
+        orderService.setDiscountPolicy(new FixDiscountPolicy());
+
+        orderService.createOrder(1L, "itemA", 10000);
+    }*/
 }
