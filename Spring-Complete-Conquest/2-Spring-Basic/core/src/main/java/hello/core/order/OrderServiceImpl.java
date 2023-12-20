@@ -3,10 +3,13 @@ package hello.core.order;
 import hello.core.discount.DiscountPolicy;
 import hello.core.discount.FixDiscountPolicy;
 import hello.core.member.*;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component/*("service")*/
+//@RequiredArgsConstructor    // final이 붙은 필드의 생성자를 생성해
 public class OrderServiceImpl implements OrderService {
 
 //    private final MemberRepository memberRepository = new MemoryMemberRepository();
@@ -16,10 +19,13 @@ public class OrderServiceImpl implements OrderService {
     private final DiscountPolicy discountPolicy;
     // 철저히 DIP를 지키는 중. = 철저히 Interface를 의존하는 중
 
-    public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy) {
+//    @Autowired private DiscountPolicy rateDiscountPolicy;
+
+    @Autowired
+    public OrderServiceImpl(MemberRepository memberRepository, @Qualifier("mainDiscountPolicy") DiscountPolicy discountPolicy) {
         this.memberRepository = memberRepository;
         this.discountPolicy = discountPolicy;
-    }
+    } // @RequiredArgsConstructor 얘가 대신해줌
 
 /*    private MemberRepository memberRepository;
     private DiscountPolicy discountPolicy;
