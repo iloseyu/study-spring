@@ -10,6 +10,7 @@ import hello.core.order.OrderService;
 import hello.core.order.OrderServiceImpl;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 
 // @Bean memberService -> new MemoryMemberRepository()
 // @Bean orderService -> new MemoryMemberRepository()
@@ -42,6 +43,7 @@ public class AppConfig {
     }
 
     @Bean
+    @Primary
     public MemoryMemberRepository memberRepository() {
         // 만약에 이게 나중에 DB로 바뀌어도, 이 부분만 바꿔주면 됨
         System.out.println("CALL AppConfig.memberRepository");

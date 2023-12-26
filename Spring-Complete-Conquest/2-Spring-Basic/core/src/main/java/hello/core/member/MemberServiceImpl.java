@@ -14,7 +14,7 @@ public class MemberServiceImpl implements MemberService{
     private final MemberRepository memberRepository;
     // 이 부분은 추상화에만 의존
 
-    @Autowired  // ac.getBean(MemberRepository.class) 와 같은 기능
+    @Autowired  // ac.getBean(MemberRepository.class) 과 같은 기능
     public MemberServiceImpl(MemberRepository memberRepository) {
         // 생성자를 통해 memberRepository에 어떤 게 들어갈 지 선택
         this.memberRepository = memberRepository;
@@ -31,8 +31,8 @@ public class MemberServiceImpl implements MemberService{
     }
 
     // 테스트 용도
-    public MemberRepository getMemberRepository() {
+/*    public MemberRepository getMemberRepository() {
         return memberRepository;
-    }
+    }*/
 
 }
